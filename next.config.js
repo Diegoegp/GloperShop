@@ -9,7 +9,8 @@ if (process.env.BOUNDLESS_MEDIA_SERVER) {
 
 module.exports = {
 	images: {
-		domains: imgDomains
+		domains: imgDomains,
+		unoptimized: true, // https://github.com/vercel
 	},
 	webpack: (config) => {
 		const defineMap = {};
